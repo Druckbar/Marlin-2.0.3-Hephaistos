@@ -111,6 +111,13 @@
   #define Y_CS_PIN         P1_15
 #endif
 
+#define Y2_STEP_PIN         P0_01
+#define Y2_DIR_PIN          P0_00
+#define Y2_ENABLE_PIN       P0_10
+#ifndef Y2_CS_PIN
+  #define Y2_CS_PIN         P1_01
+#endif
+
 #define Z_STEP_PIN         P0_22
 #define Z_DIR_PIN          P2_11
 #define Z_ENABLE_PIN       P0_21
@@ -171,6 +178,9 @@
 
   #define Y_SERIAL_TX_PIN  P1_16
   #define Y_SERIAL_RX_PIN  P1_15
+
+  #define Y2_SERIAL_TX_PIN P1_04
+  #define Y2_SERIAL_RX_PIN P1_01
 
   #define Z_SERIAL_TX_PIN  P1_14
   #define Z_SERIAL_RX_PIN  P1_10
